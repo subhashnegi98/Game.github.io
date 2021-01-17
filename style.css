@@ -6,7 +6,6 @@
 }
 
 .dice{
-    text-align: center;
     display: inline-block;
     margin: auto;
     margin: 50px;
@@ -50,7 +49,45 @@ h1{
     cursor: pointer;
 }
 
+#loadBtn{
+    padding: 10px 20px 10px 20px;
+    background: grey;
+    text-shadow: 3px 0 white;
+    box-shadow: 2px 2px 3px white;
+    cursor: pointer;
+}
+
 p{
     color:  white;
     font-size: 1.5rem;
+}
+
+@media(max-width:645px){
+    .dice{
+       margin: 0;
+       padding: 10px;
+    }
+    img{
+        width: 150px;
+        height: 150px;
+    }
+    
+}
+
+@media(max-width:343px){
+    .dice{
+       margin: 0;
+       padding: 10px;
+    }
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    #btn, #btn1{
+        font-size: .5rem;
+    }
+    #loadBtn{
+        padding: 2px;
+    }
+    
 }
